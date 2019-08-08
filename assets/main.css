@@ -1,0 +1,12 @@
+body {margin: 0 auto;}
+
+#welcome {width: 100%;}
+
+.block  {margin: 0 auto;}
+
+.write {
+	font-size: 1.5em;
+	font-weight: 700;
+	text-align: center;
+	color: #3000c;
+}
