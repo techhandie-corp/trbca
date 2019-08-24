@@ -5,6 +5,16 @@ body {
   	background-size: cover;
 }
 
+:root {
+  --burgundy: #8C001A;
+  --crimson: #990000;
+  --cordial: #30000c;
+  --gray: #cccccc;
+  --granite: #666666;
+  --scarlet: #ff0000;
+  --rose: #ffe6ea;
+}
+
 #welcome {
 	width: 100%;
 	height: 100%;
@@ -22,14 +32,12 @@ body {
 	border: 3px dotted gold;
 }
 
-
-
 .write {
 	width: 100%;
 	font-size: 1.5em;
 	font-weight: 700;
 	text-align: center;
-	color: #3000c;
+	color: var(--cordial);
 }
 
 
@@ -38,7 +46,7 @@ body {
 .navwrap {
   padding: 30px 0;
   text-align: center;
-  background: #cccccc;
+  background: var(--gray);
 }
 
 ul {
@@ -54,7 +62,7 @@ ul {
 .nav>li {/* defines navbar menu item segments*/
   float: left;
   position: relative;
-  border-right: 1px solid #fff;
+  border-right: 1px solid white;
   width: 200px
 }
 
@@ -65,15 +73,15 @@ ul {
 .nav li a {
   display: block;
   padding: 8px 20px;
-  color: #fff;/*white*/
+  color: white;/*#fff*/
   text-decoration: none;
-  background: #30000c;
+  background: var(--cordial);
 }
 
 .nav li li a {/*defines the dropdown menu*/
-  background: #fff;
-  color: #30000c;
-  border-bottom: 1px solid #ccc;
+  background: white;
+  color: var(--cordial);
+  border-bottom: 1px solid var(--gray);
   float: right;
 }
 
@@ -87,7 +95,7 @@ ul {
   top: 100%;
   width: 200px;
   margin-left: -999em;
-/*   border: 1px solid #ccc; */
+/*   border: 1px solid var(--gray); */
   z-index: 99;
 }
 
@@ -100,8 +108,8 @@ ul {
 }
 
 .nav li li a:hover {
-  background: #666;
-  color: #fff;
+  background: var(--granite);
+  color: white;
 }
 
 /* the arrow */
@@ -112,7 +120,7 @@ ul {
   width: 0;
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
-  border-bottom: 6px solid #fff;
+  border-bottom: 6px solid white;
   position: absolute;
   bottom: -1px;
   left: 50%;
