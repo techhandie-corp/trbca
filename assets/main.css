@@ -82,7 +82,7 @@ ul {
   background: white;
   color: var(--cordial);
   border-bottom: 1px solid var(--gray);
-  float: center;
+  float: center !important;
 }
 
 .nav li li:last-child a {
