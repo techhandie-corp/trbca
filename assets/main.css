@@ -5,6 +5,13 @@ body {
   	background-size: cover;
 }
 
+#welcome {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #8C001A;
+}
+
 .block {
 	display: flex;
 	align-items: center;
@@ -12,10 +19,7 @@ body {
 	border: 3px dotted gold;
 }
 
-#welcome {
-	margin: 10% 30%;
-	color: #8C001A;
-}
+
 
 .write {
 	width: 100%;
