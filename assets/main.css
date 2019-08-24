@@ -1,9 +1,16 @@
 body {
 	margin: 0 auto;
 	background-image: url("TRBCA Logo.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
-.block {margin: 10% auto;}
+.block {
+	display: flex;
+	vertical-align: middle;
+	justify-content: center;
+	margin:0 auto;
+}
 
 #welcome {
 	margin: 10% 30%;
