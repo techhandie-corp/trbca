@@ -1,10 +1,17 @@
-body {margin: 0 auto;}
+body {
+	margin: 0 auto;
+	background-image: url("assets/TRBCA Logo.png")
+}
 
-#welcome {width: 100%;}
+.block {margin: 10% auto;}
 
-.block  {margin: 0 auto;}
+#welcome {
+	margin: 10% 30%;
+	color: #8C001A;
+}
 
 .write {
+	width: 100%;
 	font-size: 1.5em;
 	font-weight: 700;
 	text-align: center;
