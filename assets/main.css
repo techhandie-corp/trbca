@@ -1,8 +1,6 @@
 body {
 	margin: 0 auto;
-	background-image: url("TRBCA Logo.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
+	background: url("TRBCA Logo.jpg") no-repeat fixed center;
 }
 
 .block {
