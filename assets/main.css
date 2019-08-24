@@ -31,3 +31,90 @@ body {
 	text-align: center;
 	color: #3000c;
 }
+
+
+/* Navigation Menu */
+.navwrap {
+  padding: 30px 0;
+  text-align: center;
+  background: #fffece;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav {
+  display: inline-block;
+}
+
+.nav>li {/* defines navbar menu item segments*/
+  float: left;
+  position: relative;
+  border-right: 1px solid #fff;
+  width: 200px
+}
+
+.nav>li:last-child {
+  border: none
+}
+
+.nav li a {
+  display: block;
+  padding: 8px 20px;
+  color: #fff;/*white*/
+  text-decoration: none;
+  background: seagreen;
+}
+
+.nav li li a {/*defines the dropdown menu*/
+  background: #fff;
+  color: seagreen;
+  border-bottom: 1px solid #ccc;
+  float: right;
+}
+
+.nav li li:last-child a {
+  border: none
+}
+
+.nav li ul {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 200px;
+  margin-left: -999em;
+/*   border: 1px solid #ccc; */
+  z-index: 99;
+}
+
+.nav li:hover ul {
+  margin-left: 0
+}
+
+.nav>li:hover>a {
+  color: #f00
+}
+
+.nav li li a:hover {
+  background: #666;
+  color: #fff;
+}
+
+/* the arrow */
+
+.nav>li:hover>a:after {
+  content: "";
+  height: 0;
+  width: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #fff;
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  margin: 0 0 0 -3px;
+  z-index: 100;
+}
