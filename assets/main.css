@@ -34,10 +34,11 @@ body {
 
 
 /* Navigation Menu */
+
 .navwrap {
   padding: 30px 0;
   text-align: center;
-  background: #fffece;
+  background: #cccccc;
 }
 
 ul {
@@ -66,12 +67,12 @@ ul {
   padding: 8px 20px;
   color: #fff;/*white*/
   text-decoration: none;
-  background: seagreen;
+  background: #30000c;
 }
 
 .nav li li a {/*defines the dropdown menu*/
   background: #fff;
-  color: seagreen;
+  color: #30000c;
   border-bottom: 1px solid #ccc;
   float: right;
 }
