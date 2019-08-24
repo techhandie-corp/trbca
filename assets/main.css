@@ -1,13 +1,15 @@
 body {
 	margin: 0 auto;
 	background: linear-gradient(rgba(198, 198, 198, 0.5),rgba(198, 198, 198, 0.5)), url("TRBCA Logo.jpg");/*no-repeat fixed center*/
+	background-repeat: no-repeat;
+  	background-size: cover;
 }
 
 .block {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin:0 auto;
+	border: 3px dotted gold;
 }
 
 #welcome {
