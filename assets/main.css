@@ -1,7 +1,6 @@
 body {
 	margin: 0 auto;
-	background: linear-gradient(rgba(198, 198, 198, 0.85),rgba(198, 198, 198, 0.85)), url("TRBCA Logo.jpg");/*no-repeat fixed center*/
-	opacity: 0.3;
+	background: linear-gradient(rgba(198, 198, 198, 0.5),rgba(198, 198, 198, 0.5)), url("TRBCA Logo.jpg");/*no-repeat fixed center*/
 }
 
 .block {
