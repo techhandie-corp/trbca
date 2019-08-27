@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Oswald|Roboto+Condensed|Roboto+Slab|ZCOOL+QingKe+HuangYou');
 
-body {
-	margin: 0 auto;
+body {margin: 0 auto;}
 	/*background: linear-gradient(rgba(198, 198, 198, 0.5),rgba(198, 198, 198, 0.5)), url("TRBCA Logo.jpg");*//*no-repeat fixed center*/
 	/*background-repeat: no-repeat;*/
   	/*background-size: cover;*/
-}
 
 :root {
   --burgundy: #8C001A;
@@ -135,16 +133,17 @@ ul {
 
 .carousel-item {
 	  width: 100%;
-	  height: 500px;
+	  height: 600px;
 }
 
 .one {
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(rgb(0,0,0),rgba(0,0,0,0.2)),url("Teaneck Municipal Building Vintage.jpg");
+  background-image: url("Teaneck Municipal Building Vintage.jpg");
+  /* linear-gradient(rgb(0,0,0),rgba(0,0,0,0.)),*/
 }
 
-.two {
+.two { 
   width: 100%;
   height: 100%;
   background-image: url("Teaneck Bowling Alley circa 1950.jpg");
