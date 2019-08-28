@@ -26,6 +26,7 @@ body {margin: 0 auto;}
 }
 
 .block {
+	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
