@@ -1,109 +1,103 @@
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=yes">
-  <meta name="description" content="Teaneck Road Business Community Alliance"><!--{{ page.title }}-->
-  <!--Google metadata -->
-  <!--<meta name="google-site-verification" content="FfTvgcLQmP0FxHeND1V7r59DeB7KNPyvKlpgZivQq24" />-->
-  
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-  
-  <!-- CDN Styling Resources-Font -->
-  <link href="https://fonts.googleapis.com/css?family=Lora|Montserrat|Nova+Round|Nova+Square|Open+Sans|Pacifico|Raleway|Slabo+13px|Slabo+27px" rel="stylesheet">
-  
-  <!--Font-Awesome-->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<!DOCTYPE html>
+<html lang='english'>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="assets/main.css" type="text/css">
-  
-  <!--Old FA version <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
-  <!--Alternative Font-Awesome Source:<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
-  
-</head>
-<body>
-
-  <header>
-      <div class="navwrap">
-      <ul class="nav">
-        <li><a href="#">About Us</a>
-          <ul>
-            <li><a href="#">History</a></li>
-            <li><a href="#">Partners</a></li>
-            <li><a href="#">Executive Board</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Merchants</a>
-          <ul>
-            <li><a href="#">Membership</a></li>
-            <li><a href="#">Workshops</a></li>
-            <li><a href="#">Business Action Groups</a></li>
-            <li><a href="#">Resources</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Residents</a>
-          <ul>
-            <li><a href="#">Neighborhood Associations</a></li>
-            <li><a href="#">Workshops</a></li>
-            <li><a href="#">Resources</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Governance</a>
-          <ul>
-            <li><a href="#">Township</a></li>
-            <li><a href="#">Advocacy</a></li>
-            <li><a href="#">Resources</a></li>
-          </ul>
-        </li>
-      </ul><!--nav-->
-    </div>
-  </header>
-  
-  <section id="welcome">
-    <div class="block">
-      <p class="write">This site is under construction</p>
-      
-      <div id="spotlight" class="carousel slide" data-ride="carousel" data-interval="5000">
-
-		<!-- Indicators -->
-		<ul class="carousel-indicators">
-		  <li data-target="#spotlight" data-slide-to="0" class="active"></li>
-		  <li data-target="#spotlight" data-slide-to="1"></li>
-		  <li data-target="#spotlight" data-slide-to="2"></li>
-		  <li data-target="#spotlight" data-slide-to="3"></li>
-		</ul>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=yes">
+		<meta name="description" content="Teaneck Road Business Community Alliance">
+		<link rel="stylesheet" type="text/css" href="website_style.css"><script type="text/javascript" src="jquery.js"></script>
 		
-		<div class="carousel-inner">
-		  
-		  <div class="carousel-item active"><div class="one"></div></div>
-		  <div class="carousel-item"><div class="two"></div></div>
-		  <div class="carousel-item"><div class="three"></div></div>
-		  <div class="carousel-item"><div class="four"></div></div>
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	  
+		<!-- CDN Styling Resources-Font -->
+		<link href="https://fonts.googleapis.com/css?family=Lora|Montserrat|Nova+Round|Nova+Square|Open+Sans|Pacifico|Raleway|Slabo+13px|Slabo+27px" rel="stylesheet">
+	  
+		<!--Font-Awesome-->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="assets/main.css" type="text/css">
+		
+		<script type="text/javascript">
+			function scrollto(div)
+			{
+			 $('html,body').animate(
+			 {
+			  scrollTop: $("#"+div).offset().top
+			 },'slow');
+			}
+		</script>
+		
+		
+		
+	</head>
+
+	<body>
+
+	<div id="header">
+	  
+		 <li id="site_name">Teaneck Road Business Community Alliance</li>
 		 
-		</div>
-		
-		<!-- Left and right controls -->
-		<a class="carousel-control-prev" href="#spotlight" data-slide="prev">
-		  <span class="carousel-control-prev-icon"></span>
-		</a>
-		<a class="carousel-control-next" href="#spotlight" data-slide="next">
-		  <span class="carousel-control-next-icon"></span>
-		</a>
-		
-	  </div>
-  
-    </div>
-  </section>
-  <footer></footer>
-  
-  
-  
-  <!-- Optional JavaScript -->
+		 <li onclick="scrollto('about');">ABOUT US</li>
+		    <!--<li><a href="#">History</a></li>
+        <li><a href="#">Partners</a></li>
+        <li><a href="#">Executive Board</a></li>-->
+		 
+		 <li onclick="scrollto('about');">MERCHANTS</li>
+		    <!--<li><a href="#">Membership</a></li>
+        <li><a href="#">Workshops</a></li>
+        <li><a href="#">Business Action Groups</a></li>
+        <li><a href="#">Resources</a></li>-->
+        
+		 <li onclick="scrollto('residents');">RESIDENTS</li>
+		    <!--<li><a href="#">Neighborhood Associations</a></li>
+        <li><a href="#">Workshops</a></li>
+        <li><a href="#">Resources</a></li>-->
+		  
+		 <li onclick="scrollto('governance');">GOVERNANCE</li>
+		    <!--<li><a href="#">Township</a></li>
+        <li><a href="#">Advocacy</a></li>
+        <li><a href="#">Resources</a></li>-->
+		 
+	</div>
+
+	<div id="welcome"></div>
+
+	<div id="about">
+		 <h1>Demo Of One Page Website Template Using HTML, CSS And jQuery<p>TalkersCode.com</p></h1>
+		 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus quam quis nibh fringilla sit amet consectetur lectus malesuada. Sed nec libero erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mi nisi, rhoncus ut vestibulum ac, sollicitudin quis lorem. </p>
+	</div>
+
+	<div id="merchants">
+		 <p>In this tutorial we will show you how to create One Page Website Template Using HTML, CSS And jQuery.Now you can build simple and beautiful website quickly.</p>
+		 <p>TalkersCode.com is a complete destination to learn Web Development with Best, Fast and Easy Methods for those who is a novice and wants to be the Xpert in Web Development.</p>
+		 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus quam quis nibh fringilla sit amet consectetur lectus malesuada. Sed nec libero erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mi nisi, rhoncus ut vestibulum ac, sollicitudin quis lorem. </p>
+		 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus quam quis nibh fringilla sit amet consectetur lectus malesuada. Sed nec libero erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mi nisi, rhoncus ut vestibulum ac, sollicitudin quis lorem. </p>
+	</div>
+
+	<div id="residents">
+		<h1>If you have any question or query you can contact us at <br>talkerscode@gmail.com <br><br>or you can fill the form below</h1>
+		<input type="text" placeholder="Name">
+		<textarea placeholder="Message"></textarea>
+		<input type="submit" value="SEND">
+	</div>
+
+	<div id="governance">
+		<h1>If you have any question or query you can contact us at <br>talkerscode@gmail.com <br><br>or you can fill the form below</h1>
+		<input type="text" placeholder="Name">
+		<textarea placeholder="Message"></textarea>
+		<input type="submit" value="SEND">
+	</div>
+
+
+	 <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-      
-  
+
 </body>
+
+</html>
