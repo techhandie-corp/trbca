@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Oswald|Roboto+Condensed|Roboto+Slab|ZCOOL+QingKe+HuangYou');
 
-body {margin: 0 auto;}
-	/*background: linear-gradient(rgba(198, 198, 198, 0.5),rgba(198, 198, 198, 0.5)), url("TRBCA Logo.jpg");*//*no-repeat fixed center*/
-	/*background-repeat: no-repeat;*/
-  	/*background-size: cover;*/
+body {
+	margin: 0 auto;
+	background: linear-gradient(rgba(198, 198, 198, 0.5),rgba(198, 198, 198, 0.5)), url("Teaneck Municipal Building Vintage.jpg");/*no-repeat fixed center*/
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 
 :root {
   --burgundy: #8C001A;
