@@ -7,19 +7,20 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=yes">
 		<meta name="description" content="Teaneck Road Business Community Alliance">
 		<link rel="stylesheet" type="text/css" href="website_style.css"><script type="text/javascript" src="jquery.js"></script>
-		
+
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-	  
+
 		<!-- CDN Styling Resources-Font -->
 		<link href="https://fonts.googleapis.com/css?family=Lora|Montserrat|Nova+Round|Nova+Square|Open+Sans|Pacifico|Raleway|Slabo+13px|Slabo+27px" rel="stylesheet">
-	  
+
 		<!--Font-Awesome-->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
 		<!-- CSS -->
 		<link rel="stylesheet" href="assets/main.css" type="text/css">
-		
+
+
 		<script type="text/javascript">
 			function scrollto(div)
 			{
@@ -29,38 +30,46 @@
 			 },'slow');
 			}
 		</script>
-		
-		
-		
+
+
+
 	</head>
 
 	<body>
 
 	<div id="header">
-	  
-		 <li id="site_name">Teaneck Road Business Community Alliance</li>
-		 
-		 <li onclick="scrollto('about');">ABOUT US</li>
-		    <!--<li><a href="#">History</a></li>
-        <li><a href="#">Partners</a></li>
-        <li><a href="#">Executive Board</a></li>-->
-		 
-		 <li onclick="scrollto('about');">MERCHANTS</li>
-		    <!--<li><a href="#">Membership</a></li>
-        <li><a href="#">Workshops</a></li>
-        <li><a href="#">Business Action Groups</a></li>
-        <li><a href="#">Resources</a></li>-->
-        
-		 <li onclick="scrollto('residents');">RESIDENTS</li>
-		    <!--<li><a href="#">Neighborhood Associations</a></li>
-        <li><a href="#">Workshops</a></li>
-        <li><a href="#">Resources</a></li>-->
-		  
-		 <li onclick="scrollto('governance');">GOVERNANCE</li>
-		    <!--<li><a href="#">Township</a></li>
-        <li><a href="#">Advocacy</a></li>
-        <li><a href="#">Resources</a></li>-->
-		 
+
+		<div class="navwrap">
+			<ul class="nav">
+				<li id="site_name">Teaneck Road Business Community Alliance</li>
+				<li onclick="scrollto('about');">ABOUT US</li>
+				<ul>
+					<li onclick="scrollto('history');">History</li>
+					<li onclick="scrollto('psrtners');">Partners</li>
+					<li onclick="scrollto('board');">Executive Board</li>
+				</ul>
+				 <li onclick="scrollto('about');">MERCHANTS</li>
+				 <ul>
+					<li onclick="scrollto('membership');">Membership</li>
+					<li onclick="scrollto('workshops1');">Workshops</li>
+					<li onclick="scrollto('business_action');">Business Action Groups</li>
+					<li onclick="scrollto('resources1');">Resources</li>
+				</ul>
+				 <li onclick="scrollto('residents');">RESIDENTS</li>
+				 <ul>
+					<li onclick="scrollto('associations');">Neighborhood Associations</li>
+					<li onclick="scrollto('workshops2');">Workshops</li>
+					<li onclick="scrollto('resources2');">Resources</li>
+				</ul>
+				 <li onclick="scrollto('governance');">GOVERNANCE</li>
+				 <ul>
+					<li onclick="scrollto('township');">Township</li>
+					<li onclick="scrollto('advocacy');">Advocacy</li>
+					<li onclick="scrollto('resources3');">Resources</li>
+				</ul>
+			</ul>
+		</div>
+
 	</div>
 
 	<div id="welcome"></div>
