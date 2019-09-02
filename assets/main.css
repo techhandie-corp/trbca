@@ -48,6 +48,9 @@ body {
 /* Navigation Menu */
 
 .navwrap {
+  width: 100%;
+  /*display: flex;
+  flex-direction: row;*/
   padding: 30px 0;
   text-align: center;
   background: var(--gray);
@@ -60,6 +63,7 @@ ul {
 }
 
 .nav {
+  width: 100%;
   display: inline-block;
 }
 
@@ -130,51 +134,4 @@ ul {
   left: 50%;
   margin: 0 0 0 -3px;
   z-index: 100;
-}
-
-
-/* Home Page Carouael */
-
-#spotlight.carousel.slide {
-  position: relative;
-  width: 100%;
-}
-
-.carousel-item {
-	  width: 100%;
-	  height: 600px;
-}
-
-.one {
-  width: 100%;
-  height: 100%;
-  background-image: url("Teaneck Municipal Building Vintage.jpg");
-  /* linear-gradient(rgb(0,0,0),rgba(0,0,0,0.)),*/
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.two { 
-  width: 100%;
-  height: 100%;
-  background-image: url("Teaneck Bowling Alley circa 1950.jpg");
-/*   filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.3)); */
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.three {
-  width: 100%;
-  height: 100%;
-  background-image: url("Teaneck Road Storefront.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.four {
-  width: 100%;
-  height: 100%;
-  background-image: url("Teaneck Road Streetscape 03182019 (3).jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
