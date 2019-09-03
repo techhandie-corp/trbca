@@ -168,6 +168,7 @@ ul {
 	width: 40px;
 	height: 40px;
 	margin: 0px 10px;
+	padding-top: 5px; /*move icon down some*/
 	border-radius: 100%;
 	background: var(--gray); /*#7DCEA0*/
 }
@@ -270,7 +271,7 @@ ul {
 	height: 40px;
 	margin: 0px 10px;
 	border-radius: 100%;
-	background: var(--cordial); /*#fff */
+	background: var(--gray); /*#fff */
 }
 .footer-nav2 ul li a{
 	text-decoration: none;
@@ -325,16 +326,16 @@ footer p {
 .footer-base {text-align: center;}
 
 .footer-base p {
-  color: whitesmoke;
+  color: white;
 }
 
-#masthead, #webmaster {
+a#masthead, a#webmaster {
   color: papayawhip;
   text-decoration: none;
 }
 
 
-#masthead:hover, #webmaster:hover {
+a#masthead:hover, a#webmaster:hover {
   color: var(--kale);
 }
 
