@@ -235,8 +235,9 @@ ul {
   font-family: 'Oswald', sans-serif;
   font-size: 1.75em;
   font-weight: 700;
-	color: var(--burgundy);
+  color: var(--burgundy);
   text-align: center;
+  margin: 80px 0 0 0;
 }
 
 .write {
