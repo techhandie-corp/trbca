@@ -543,6 +543,7 @@ td:nth-child(n) {border-right: 0;}/*1px solid var(--midnite)*/
 /* Neighborhood Block Associations List */
 #nas_list {
     margin: 50px 30% 80px 40%;
+    padding: 10px;
 }
 
 #nas_list ul.nas {
