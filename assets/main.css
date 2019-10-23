@@ -516,11 +516,7 @@ form#bus_reg {
   border-collapse: collapse;
 }
 
-#nas_list {
-    margin: 50px 30% 80px 40%;
-}
-
-.nas, #nas th {
+#nas th {
   font-family: 'Gugi';
   font-size: 1.6em;
   color: var(--granite);
@@ -542,6 +538,21 @@ form#bus_reg {
 th:nth-child(n) {border-right: 0;}/*1px solid var(--midnite);*/
 
 td:nth-child(n) {border-right: 0;}/*1px solid var(--midnite)*/
+
+
+/* Neighborhood Block Associations List */
+#nas_list {
+    margin: 50px 30% 80px 40%;
+}
+
+#nas_list ul.nas {
+  font-family: 'Gugi';
+  font-size: 1.6em;
+  color: var(--granite);
+  text-decoration: none;
+}
+
+
 /* Neighborhood Assoc End */
 
 /* Workshop */
