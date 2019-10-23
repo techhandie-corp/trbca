@@ -262,7 +262,10 @@ li.standard {
 }
 
 /* History */
-#history {padding: 50px;}
+#history {
+	display: none;
+	padding: 50px;
+}
 
 #history .title {
   margin: 30px auto;
