@@ -516,7 +516,7 @@ form#bus_reg {
   border-collapse: collapse;
 }
 
-#nas th {
+.nas, #nas th {
   font-family: 'Gugi';
   font-size: 1.6em;
   color: var(--granite);
