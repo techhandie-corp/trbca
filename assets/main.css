@@ -507,6 +507,7 @@ form#bus_reg {
 
 /* Neighborhood Assoc */
 #nas {
+  display: none;
   margin: 50px auto 50px auto;
   border-top: 0;/*3px solid var(--eggplant);*/
   border-bottom: 0;/*3px solid var(--eggplant); */
@@ -549,6 +550,7 @@ td:nth-child(n) {border-right: 0;}/*1px solid var(--midnite)*/
 }
 
 #r_work {
+  display: none;
   margin: 0 auto;
   text-align: center;
   font-family: 'Oswald';
