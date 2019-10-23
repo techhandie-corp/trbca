@@ -516,11 +516,15 @@ form#bus_reg {
   border-collapse: collapse;
 }
 
+#nas_block {
+	margin: 50px auto;
+}
+
 .nas, #nas th {
   font-family: 'Gugi';
   font-size: 1.6em;
   color: var(--granite);
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 #nas tr {padding: 30px;}
