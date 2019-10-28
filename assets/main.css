@@ -238,7 +238,7 @@ ul {
   color: var(--burgundy);
   text-align: justify;
   margin: 80px 0 0 0;
-  padding-left: -15px;
+  padding-left: -15px !important;
 }
 
 .write {
