@@ -542,8 +542,8 @@ td:nth-child(n) {border-right: 0;}/*1px solid var(--midnite)*/
 
 /* Neighborhood Block Associations List */
 #nas_list {
-    margin: 0 0% 50px 35%;
-    /*padding: 20px;*/
+    margin: 0 0 50px 40%;
+    padding-top: -20px;*/
 }
 
 #nas_list ul.nas {
@@ -551,7 +551,7 @@ td:nth-child(n) {border-right: 0;}/*1px solid var(--midnite)*/
   font-size: 1.6em;
   color: var(--granite);
   text-decoration: none;
-  padding: 20px;
+  padding: 30px;
 }
 
 
