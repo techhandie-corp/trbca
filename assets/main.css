@@ -256,6 +256,16 @@ li.standard {
   list-style: square inside;
 }
 
+
+/* Current News */
+#current_news {}
+.curr_title {
+  margin: 30px auto;
+}
+
+
+/* Current News End */
+
 /* About */
 /* Mission */
 #mission {
