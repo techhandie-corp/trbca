@@ -1277,6 +1277,11 @@ td:nth-child(n) {border-right: 0;}/*1px solid var(--midnite)*/
   padding: 20px;
 }
 
+.dagger {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: var(--cordial);
+}
 
 #dates .close {
   grid-area: open;
