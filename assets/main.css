@@ -258,13 +258,44 @@ li.standard {
 
 
 /* Current News */
-#current_news {}
-.curr_title {
-  margin: 30px auto;
+
+#current_news {
+  margin: 50px auto;
+}
+.curr_title  { 
+  font-family: 'Oswald';
+  font-size: 1.75em;
+  text-align: center;
+  color: var(--burgundy);
+  font-weight: 600;
+  margin: 30px 0;
 }
 
+.curr_content {
+  margin:50px 0;
+}
+
+.curr_content li {
+  list-style: square inside;
+  font-size: 1.25em;
+  font-weight: 600;
+  color: var(--cordial);
+  margin: 30px 0 20px 30px;
+}
+
+#current_news li a {
+  color: var(--burgundy);
+} 
+
+#current_news li a:hover {
+  color: coral;
+  font-size: 1.265em;
+  font-weight:400;
+  text-decoration: none;
+}
 
 /* Current News End */
+
 
 /* About */
 /* Mission */
