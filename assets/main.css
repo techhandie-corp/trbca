@@ -966,7 +966,7 @@ td:nth-child(n) {border-right: 0;}/*1px solid var(--midnite)*/
     "dates events times venues attach"
     "dates events times venues attach"
     "dates events times venues attach"
-	  "dates events times venues attach"
+    "dates events times venues attach"
     "close close close close close";
   margin: 0;
   padding: 80px 20px 80px 20px;
@@ -1278,19 +1278,30 @@ td:nth-child(n) {border-right: 0;}/*1px solid var(--midnite)*/
 }
 
 .dagger {
-  font-size: 1.5em;
+  font-size: 1.125em;
   font-weight: 700;
   color: var(--cordial);
 }
 
 #dates .close {
-  grid-area: open;
+  grid-area: close;
   grid-row: 7/8;
   grid-column: 1/6;
   font-family: 'Fjalla One', sans-serif;
   font-size: 1.125em;
   font-weight: 600;
   padding: 40px 0;
+  margin:30px 0 0 0;
+}
+
+#dates .dagger_close {
+  grid-area: close;
+  grid-row: 7/8;
+  grid-column: 1/6;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1.125em;
+  font-weight: 400;
+  padding: 30px 0;	
 }
 
 /* Dates End */
