@@ -260,7 +260,7 @@ li.standard {
 /* Current News */
 
 #current_news {
-  margin: 50px auto;
+  margin: 100px 0 50px 0;
 }
 .curr_title  { 
   font-family: 'Oswald';
@@ -272,7 +272,7 @@ li.standard {
 }
 
 .curr_content {
-  margin:50px 0;
+  margin:20px 10% 130px 10%;
 }
 
 .curr_content li {
