@@ -1,54 +1,129 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Oswald|Roboto+Condensed|Roboto+Slab|ZCOOL+QingKe+HuangYou');
+/****************/
+/*    General   */	  
+/****************/
 
-body {margin: 0 auto;}
-	/*background: linear-gradient(rgba(198, 198, 198, 0.5),rgba(198, 198, 198, 0.5)), url("TRBCA Logo.jpg");*//*no-repeat fixed center*/
-	/*background-repeat: no-repeat;*/
-  	/*background-size: cover;*/
+/* Font Palette */
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans|Do+Hyeon|Fjalla+One|Gugi|Open+Sans|Oswald|Roboto+Condensed|Roboto+Slab|ZCOOL+QingKe+HuangYou');
+/* Font Palette End */
 
+
+/* Color Pallette */
 :root {
+  --batter: #ffff4d;
+  --bubblegum: #ffb3bf;
   --burgundy: #8C001A;
-  --crimson: #990000;
+  --clear: #BBBEC5;
   --cordial: #30000c;
+  --crimson: #990000;
+  --eggplant: #614051;
   --gray: #cccccc;
-  --granite: #666666;
-  --scarlet: #ff0000;
+  --granite: #272727;
+  --grape: #6f2da8;
+  --kale: #7DCEA0;
+  --plum: #65313e;
+  --mango: #febb16;
+  --midnite: #120337;
   --rose: #ffe6ea;
+  --scarlet: #ff0000;
+  --shadow: #A2A5AC;
+  --shale: #212529;
+  --slate: #666666;
+  --turquoise: #00a1df;
+  --water: #f2f2f2;
+}
+/* Color Palette End */
+
+.shine {filter: brightness(120%);}
+
+.matte {filter: contrast(50%);}
+
+.weighty {font-weight: 700;}
+
+.title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2em;
+  color: var(--burgundy);
+  text-align: center;
+  margin-bottom: 30px;}
+
+.subtitle {
+  font-family: 'Roboto Condensed';
+  font-size: 1.85em;
+  color: var(--crimson);
+  line-height: 2;
 }
 
-#welcome {
-	width: 100%;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: #8C001A;
-	border: 3px dotted fuchsia;
-}
-
-.block {
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	border: 3px dotted gold;
-}
-
-.write {
-	width: 100%;
-	font-size: 1.5em;
-	font-weight: 700;
-	text-align: center;
+.text {
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+	font-size: 1.75em;
+	font-weight: 500;
+	text-align: justify;
 	color: var(--cordial);
+}
+
+p {
+  font-family: 'Roboto Slab', serif;
+  color: var(--granite);
+  font-size: 1.5em;
+  text-align: justify;
+}
+
+.center {text-align: center;}
+
+.just {text-align: justify;}
+
+.list {
+  font-family: 'Gugi';
+  font-size: 1.575em;
+  color: var(--granite);
+  margin: 0 30% 80px 40%;
+  list-style: square inside;
+}
+
+.l-item {}
+
+
+hr {
+    /*width: 100%;*/
+    display: block;
+    background-color: var(--shadow);/* #BBBEC5 */
+    margin: 20px auto;/*0.5em*/
+    padding: 0.0625rem;
+    border-style: inset;
+	/* Single-direction drop shadow */
+	/* box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5); */
+}
+
+.separation {
+  width:100%;
+  background-color: var(--shadow);
+/*   padding: 20px 0; */
+}
+
+/* General End */
+
+
+/* Page */
+
+body {
+	margin: 0 auto;
+}
+
+#webpage {
+  min-height: 100vh;
+  position: relative;
 }
 
 
 /* Navigation Menu */
 
 .navwrap {
+  /*width: 100%;*/
+  display: flex;
+  flex-direction: row;
   padding: 30px 0;
   text-align: center;
-  background: var(--gray);
+  background: var(--cordial);/*var(--gray)*/
 }
 
 ul {
@@ -58,7 +133,9 @@ ul {
 }
 
 .nav {
+  /*width: 100%;*/
   display: inline-block;
+  margin: 0 auto;
 }
 
 .nav>li {/* defines navbar menu item segments*/
@@ -75,6 +152,8 @@ ul {
 .nav li a {
   display: block;
   padding: 8px 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
   color: white;/*#fff*/
   text-decoration: none;
   background: var(--cordial);
@@ -83,6 +162,7 @@ ul {
 .nav li li a {/*defines the dropdown menu*/
   background: white;
   color: var(--cordial);
+  font-size: 15.5px;
   border-bottom: 1px solid var(--gray);
   float: center !important;
 }
@@ -114,7 +194,7 @@ ul {
   color: white;
 }
 
-/* the arrow */
+/* the dropdown arrow */
 
 .nav>li:hover>a:after {
   content: "";
@@ -130,49 +210,1312 @@ ul {
   z-index: 100;
 }
 
+/* Content */
 
-/* Home Page Carouael */
+#content {
+  background: linear-gradient(rgba(198, 198, 198, 0.5),rgba(198, 198, 198, 0.5)), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2736276/Teaneck%20Municipal%20Building%20Vintage.jpg');/* production URL: "Teaneck Municipal Building Vintage.jpg" */
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+ /*height in prodution remove or change to auto*/
+	display: flex;
+	align-items: space-between; /* horizontal alignment */
+	align-content: center;/* vertical alignment */
+	flex-direction: column;
+}
 
-#spotlight.carousel.slide {
+
+#home {
+  display: inline-flex;
+  align-self: flex-start; 
+  margin: 50px 0;
+}
+
+#welcome {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.75em;
+  font-weight: 700;
+  color: var(--burgundy);
+  text-align: justify;
+  margin: 80px 0 0 0;
+  padding-left: -15px !important;
+}
+
+.write {
+	width: 100%;
+	font-size: 1.25em;
+	font-weight: 300;
+	text-align: justify;
+	color: var(--cordial);
+}
+
+#welcome ul {margin:20px 0;}
+
+li.standard {
+  text-align: left;
+  list-style: square inside;
+}
+
+
+/* Current News */
+
+#current_news {
+  margin: 150px 0 50px 0;
+}
+.curr_title  { 
+  font-family: 'Oswald';
+  font-size: 1.75em;
+  text-align: center;
+  color: var(--burgundy);
+  font-weight: 600;
+  margin: 30px 0;
+}
+
+.curr_content {
+  margin:20px 10% 130px 10%;
+}
+
+.curr_content li {
+  list-style: square inside;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: var(--cordial);
+  margin: 30px 0 20px 30px;
+}
+
+#current_news li a {
+  color: var(--burgundy);
+} 
+
+#current_news li a:hover {
+  color: coral;
+  font-size: 1.265em;
+  font-weight:400;
+  text-decoration: none;
+}
+
+/* Current News End */
+
+
+/* About */
+/* Mission */
+#mission {
+  padding: 50px;
+}
+
+/* History */
+#history {
+	display: none;
+	padding: 50px;
+}
+
+#history .title {
+  margin: 30px auto;
+}
+
+#history ul {
+  margin: 0 0 0 20px;
+}
+
+#history li {
+  list-style: square inside;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: var(--cordial);
+}
+ /* Partners */
+#partners {margin: 50px;}
+
+#prtners .title {margin: 30px auto;}
+
+#partners ul {
+  margin: 0 0 0 20px;
+}
+
+#partners li {
+  list-style: square inside;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: var(--cordial);
+}
+
+#partners li a {
+  text-decoration: none;
+  color: var(--cordial);
+}
+
+#partners li a:hover {
+  color: var(--batter);
+  font-size: 1.5125em;
+}
+
+/* Board */
+#board {padding: 50px;}
+
+#board dl {
+  margin: 0 0 30px 20px;
+  color: var(--granite);
+}
+
+#board dt {
+  font-family: 'Roboto Slab';
+  font-size: 1.525em;
+  color: var(--crimson);
+}
+
+#board dd {
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  font-size: 1.5em;
+  font-style: italic;
+  padding-left: 20px;
+}
+
+
+/* Merchants */
+#merchants {padding: 50px;}
+
+#merchants p {text-align: center;}
+
+/*Questionnaire*/
+#questionnaire .frame {
+  padding: 50px;
+  margin: 0 30% 0 18%;
+}
+
+#questionnaire .just {text-align: justify;}
+
+#questionnaire .center {text-align: center;}
+/* Questionnaire End */
+
+/* Membership */
+#membership {padding: 50px 0;}
+
+#membership p {text-align: justify;}
+
+#membership a {
+  text-decoration: none;
+  color: var(--plum);
+  font-weight: 700;
+  font-style: oblique;
+}
+
+#membership a:hover {
+  color: var(--batter);
+  font-size: 1.0625em;
+}
+/* Membership End */
+
+/* Subscription */
+#subscription {padding: 50px 0;}
+
+#subscription p {text-align: justify;}
+
+
+/* Registration */
+form#bus_reg {
+/*   width: 100%; */
+  margin: 0;
+  padding: 50px;
+  margin: 0 15% 0 20%;
+}
+
+#bus_reg p {
+  font-family:'ZCOOL QingKe HuangYou';
+  font-size: 1em;
+  font-style: oblique;
+  color: var(--batter);
+  text-align: left;
+}
+
+#bus_reg .form-label {
+  color: var(--batter);
+}
+
+#bus_reg .form-group {padding-bottom: 25px;}
+
+#bus_reg label {padding-right: 10px;}
+
+#bus_reg input, #bus_reg select {
+  width: 750px;
+  font-size: 1.0625em;
+  padding: 25px 0 25px 10px;
+  border-radius: 12px;
+}
+
+#bus_reg .drop {
+  font-family: 'Black Han Sans', sans-serif;/*Black Han Sans*/
+  font-size: 2em;
+  font-weight: normal;
+  color: var(--mango);
+}
+
+#bus_reg .locale {
+  margin-top: 10px;
+  font-size: 0.95em;
+  font-style: oblique;
+  color: var(--batter);
+}
+
+#bus_reg abbr[title] {
+  color: var(--batter);
+  font-size: 1.5em;
+  text-decoration: none !important;
+}
+
+#s_prod {width: 750px;}
+
+#serve2 {padding-top: 20px;}
+
+#bus_reg .desc {
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 1.25em;
+  color: var(--burgundy);
+  padding-bottom: 10px;
+}
+
+#bus_reg .sect {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1.75em;
+  color: forestgreen; /*var(--kale)*/
+  padding: 20px 0;
+}
+
+#button {
+  width: 150px !important;
+  padding: 8px !important;
+  margin: 0 0 20px 0;
+  color: var(--cordial);
+  border-radius: 10px;
+}
+
+
+/**********/
+/**Errors**/
+/**********/
+.error {
+    border-color: red;
+}
+
+.error-message {
+    color: red;
+    font-style: italic;
+    margin-bottom: 1em;
+}
+/*Errors End*/
+
+
+/* Payment */
+#sub-pay {margin: 0 15% 0 28%;}
+
+#payment {
+  font-family: 'Black Han Sans';
+  font-weight: lighter;
+  color: var(--mango);
+}
+
+#s_button {
+  font-size: 1.125em;
+  margin-top: 40px;
+  color: pink;
+}
+
+.pay {
+  color: var(--midnite);
+  line-height: 2;
+  font-weight: 500;
+  font-size: 1.25em;
+}
+
+#pp-pay select[name=os0] {
+  color: var(--midnite);
+  margin-bottom: 20px;
+}
+
+/* Subscription End */
+
+/* Resident */
+#residents {padding: 50px 0;}
+
+.res-block {
+  margin: 50px;
+  line-height: 2;
+}
+
+#residents .list, #residents .l-item {
+  color: var(--granite);
+}
+
+#res_anchor {margin: 80px 0 70px 0;}
+
+/* Neighborhood Assoc */
+#nas {
+  display: none;
+  margin: 30px auto;
+  border-top: 0;/*3px solid var(--eggplant);*/
+  border-bottom: 0;/*3px solid var(--eggplant); */
+  border-left: 0;/*3px solid var(--eggplant);*/
+  border-right: 0;/*3px solid var(--eggplant);*/
+  border-collapse: collapse;
+}
+
+#nas th {
+  font-family: 'Gugi';
+  font-size: 1.6em;
+  color: var(--granite);
+  text-decoration: none;
+}
+
+#nas tr {padding: 30px;}
+
+#nas td {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1.5em;
+  color: var(--shale);
+}
+
+#nas th, #nas td {padding: 10px 30px 10px 10px;}
+
+#nas tr:nth-child(n) {border-bottom: 0;} /*2px dashed var(--midnite);*/
+
+th:nth-child(n) {border-right: 0;}/*1px solid var(--midnite);*/
+
+td:nth-child(n) {border-right: 0;}/*1px solid var(--midnite)*/
+
+
+/* Neighborhood Block Associations List */
+#nas_list {
+    margin: 0 0 50px 37%;
+    /*padding-top: -20px;*/
+}
+
+#nas_list ul.nas {
+  font-family: 'Gugi';
+  font-size: 1.6em;
+  color: var(--granite);
+  text-decoration: none;
+  margin-top: -40px;
+  padding: 30px;
+}
+
+
+/* Neighborhood Assoc End */
+
+/* Workshop */
+#r-workshops {padding: 50px 0;}
+
+#worktext {
+  text-align: center;
+  margin-bottom: 50px;
+  /*color: pink;*/
+}
+
+#r_work {
+  display: none;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Oswald';
+  font-size: 1.75em;
+  color: var(--crimson);
+}
+
+#r_work li {
+  padding: 0 0 50px 0;
+}
+/* Workshop End */
+
+/* Governance */
+#governance {padding: 50px 0;}
+
+.gov-block {
+  margin: 50px;
+  line-height: 2;
+}
+
+#governance span {
+  color: var(--plum);
+  font-style: oblique;
+}
+
+
+/* Contact */
+
+/* Organization Info */
+
+.org_info {
+  display: grid;
+  grid-template-columns: 10% 80%;
+  grid-template-rows: auto;
+  grid-row-gap: 30px;
+  grid-template-areas:
+    "title title"
+    "icons info"
+    "icons info"
+    "icons info"
+    "subtitle subtitle";
+  margin: 80px 20% 50px 35%;
+}
+
+.org_info .org {
+  grid-area: title;
+  grid-row: 1/2;
+  grid-column: 1/3;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1.75em;
+  color: var(--granite);
+  text-align: justify;
+}
+
+.org_info .subtitle {
+  grid-area: subtitle;
+  grid-row: 5/6;
+  grid-column: 1/3;
+  font-style: oblique;
+}
+
+.fas {
+  grid-area: icons;
+  
+}
+
+.item1, .item2, .item3 {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1.5rem;
+  color: var(--granite);
+}
+
+.item1 {
+  grid-area: info;
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+
+.item2 {
+  grid-area: info;
+  grid-row: 3/4;
+  grid-column: 2/3;
+}
+
+.item3 {
+  grid-area: info;
+  grid-row: 4/5;
+  grid-column: 2/3;
+}
+
+.fa-phone-alt, .fa-envelope, .fa-fax {
+  font-size: 1.5em;
+  color: var(--cordial);
+}
+/* Organization Info End */
+
+
+/* Contact Form */
+#contact {padding: 50px 0;}
+
+#contact .subtitle {margin-bottom: 35px;}
+
+.form-container {
+  margin: 0 20% 0 26%;
+  color: ivory;
+}
+
+.form-title {
+  font-size: 3em;
+  text-decoration: double;
+  padding: 10px 0 20px 0;
+  margin: 40px 0 0 40px;
+}
+
+.form-subtitle {
+  font-size: 1.25em;
+  color: ivory;
+  line-height: -2.5;
+  margin: 0 0 0 40px;
+}
+
+.form-message {
+  font-size: 1em;
+  font-style: oblique;
+  padding-left: 50px;
+  color: ivory;
+}
+
+
+#contact_form {
+  margin: 0 20px 80px 50px;
+  
+}
+
+#contact_form .f-group {
+  padding: 20px 0;
+}
+
+#contact_form .f-control {
+  padding: 15px 250px 15px 15px;
+  font-size: 1.125em;
+  border-radius: 8px;
+}
+
+#contact_form abbr {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+#contact_button {
+  padding: 10px 35px 10px 30px;
+  border-radius: 8px;
+  color: var(--granite);
+}
+
+/* News */
+#news {padding: 50px 0;}
+
+#news .news-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "open open open"
+    "item descr attach"
+    "item descr attach"
+    "item descr attach"
+    "close close close";
+  margin: 0;
+  padding: 80px 50px;
+  background-color: var(--water);
+}
+
+#news a {
+  color: var(--cordial);
+  text-decoration: none;
+}
+
+#news a:hover {
+  color: var(--turquoise);
+}
+
+#news .title {
+  grid-area: open;
+  grid-row: 1/2;
+  grid-column: 1/4;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 3em;
+  font-weight: 600;
+}
+
+#news .entry {
+  grid-area: item;
+  grid-row: 2/3;
+  grid-column: 1/2;
+  font-family:'Do Hyeon', sans-serif;
+  font-size: 1.5em;
+  color: var(--cordial);
+  border-bottom: 1.5px solid var(--crimson);
+  padding: 30px;
+}
+
+#news .descr {
+  grid-area: descr;
+  grid-row: 2/3;
+  grid-column: 2/3;
+  font-family:'Do Hyeon', sans-serif;
+  font-size: 1.5em;
+  color: var(--cordial);
+  border-bottom: 1.5px solid var(--crimson);
+  padding: 30px;
+}
+
+#news .attach {
+  grid-area: attach;
+  grid-row: 2/3;
+  grid-column: 3/4;
+  font-family:'Do Hyeon', sans-serif;
+  font-size: 1.5em;
+  color: var(--cordial);
+  border-bottom: 1.5px solid var(--crimson);
+  text-align: center;
+  padding: 30px;
+}
+
+
+#news .entry1 {
+  grid-area: item;
+  grid-row: 3/4;
+  grid-column: 1/2;
+  font-family:'Do Hyeon', sans-serif;
+  font-size: 1.5em;
+  color: var(--cordial);
+  padding: 30px;
+}
+
+#news .descr1 {
+  grid-area: descr;
+  grid-row: 3/4;
+  grid-column: 2/3;
+  font-family:'Do Hyeon', sans-serif;
+  font-size: 1.5em;
+  color: var(--cordial);
+  padding: 30px;
+}
+
+#news .attach1 {
+  grid-area: attach;
+  grid-row: 3/4;
+  grid-column: 3/4;
+  content: "";
+  font-family:'Do Hyeon', sans-serif;
+  font-size: 1.125em;
+  color: var(--cordial);
+  font-style: italic;
+  padding: 30px;
+}
+
+#news .entry2 {
+  grid-area: item;
+  grid-row: 4/5;
+  grid-column: 1/2;
+  font-family:'Do Hyeon', sans-serif;
+  font-size: 1.5em;
+  color: var(--cordial);
+  padding: 30px;
+}
+
+#news .descr2 {
+  grid-area: descr;
+  grid-row: 4/5;
+  grid-column: 2/3;
+  font-family:'Do Hyeon', sans-serif;
+  font-size: 1.5em;
+  color: var(--cordial);
+  padding: 30px;
+}
+
+#news .attach2 {
+  grid-area: attach;
+  grid-row: 4/5;
+  grid-column: 3/4;
+  content: "";
+  font-family:'Do Hyeon', sans-serif;
+  font-size: 1.125em;
+  color: var(--cordial);
+  font-style: italic;
+  padding: 30px;
+}
+
+#news .entry3 {
+  grid-area: item;
+  grid-row: 5/6;
+  grid-column: 1/2;
+  font-family:'Do Hyeon', sans-serif;
+  font-size: 1.5em;
+  color: var(--cordial);
+  border-bottom: 1.5px solid var(--crimson);
+  padding: 30px;
+}
+
+#news .descr3 {
+  grid-area: descr;
+  grid-row: 5/6;
+  grid-column: 2/3;
+  font-family:'Do Hyeon', sans-serif;
+  font-size: 1.5em;
+  color: var(--cordial);
+  border-bottom: 1.5px solid var(--crimson);
+  padding: 30px;
+}
+
+#news .attach3 {
+  grid-area: attach;
+  grid-row: 5/6;
+  grid-column: 3/4;
+  font-family:'Do Hyeon', sans-serif;
+  font-size: 1.125em;
+  color: var(--cordial);
+  font-style: italic;
+  border-bottom: 1.5px solid var(--crimson);
+  padding: 30px;
+}
+
+#news .close {
+  grid-area: close;
+  grid-row: 6/7;
+  grid-column: 1/4;
+/*   content: ""; */
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1.125em;
+  font-weight: 600;
+  padding: 30px;
+}
+
+/* News End */
+
+
+/* Dates */
+#dates {padding: 50px 0;}
+
+#dates .dates-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 2fr 1fr;;
+    /* auto auto auto auto auto */
+    /* 10% 30% 10% 40% 10% */
+  grid-template-rows: auto;
+  grid-gap: auto;
+  grid-template-areas:
+    "open open open open open"
+    "dates events times venues attach"
+    "dates events times venues attach"
+    "dates events times venues attach"
+    "dates events times venues attach"
+    "close close close close close";
+  margin: 0;
+  padding: 80px 20px 80px 20px;
+  background-color: var(--water);
+}
+
+#dates a {
+  color: var(--plum);
+  text-decoration: none;
+}
+
+#dates a:hover {
+  color: var(--turquoise);
+}
+
+#dates .title {
+  grid-area: open;
+  grid-row: 1/2;
+  grid-column: 1/6;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 3em;
+  font-weight: 600;
+  color: var(--turquoise);
+}
+
+
+#dates .date {
+  grid-area: dates;
+  grid-row: 2/3;
+  grid-column: 1/2;
+  font-family:'Do Hyeon', sans-serif;
+  font-size: 1.5em;
+  color: var(--midnite);
+  background-color: gainsboro;
+  padding: 20px;
+}
+
+#dates .event {
+  grid-area: events;
+  grid-row: 2/3;
+  grid-column: 2/3;
+  font-family:'Do Hyeon', sans-serif;
+  font-size: 1.5em;
+  color: var(--midnite);
+  background-color: gainsboro;
+  padding: 20px;
+}
+
+#dates .time {
+	grid-area: times;
+	grid-row: 2/3;
+	grid-column: 3/4;
+	font-family:'Do Hyeon', sans-serif;
+	font-size: 1.5em;
+	color: var(--midnite);
+	background-color: gainsboro;
+  padding: 20px;
+}
+
+#dates .venue {
+	grid-area: venues;
+	grid-row: 2/3;
+	grid-column: 4/5;
+	font-family:'Do Hyeon', sans-serif;
+	font-size: 1.5em;
+	color: var(--midnite);
+	background-color: gainsboro;
+  padding: 20px;
+}
+
+#dates .attach {
+  grid-area: attach;
+  grid-row: 2/3;
+  grid-column: 5/6;
+  font-family:'Do Hyeon', sans-serif;
+  font-size: 1.5em;
+  color: var(--midnite);
+  background-color: gainsboro;
+  padding: 20px;
+}
+
+
+#dates .date1 {
+  grid-area: dates;
+  grid-row: 3/4;
+  grid-column: 1/2;
+  font-family:'ZCOOL QingKe HuangYou', sans-serif;/*Do Hyeon*/
+  font-size: 1.5em;
+  color: var(--plum);
+  border-bottom: 1px dashed var(--eggplant);
+  padding: 20px;
+}
+
+#dates .event1 {
+  grid-area: events;
+  grid-row: 3/4;
+  grid-column: 2/3;
+  font-family:'ZCOOL QingKe HuangYou', sans-serif;
+  font-size: 1.5em;
+  color: var(--plum);
+  border-bottom: 1px dashed var(--eggplant);
+  padding: 20px;
+}
+
+#dates .time1 {
+	grid-area: times;
+	grid-row: 3/4;
+	grid-column: 3/4;
+	font-family:'ZCOOL QingKe HuangYou', sans-serif;
+	font-size: 1.5em;
+	color: var(--plum);
+	border-bottom: 1px dashed var(--eggplant);
+  padding: 20px;
+}
+
+#dates .venue1 {
+	grid-area: venues;
+	grid-row: 3/4;
+	grid-column: 4/5;
+	font-family:'ZCOOL QingKe HuangYou', sans-serif;
+	font-size: 1.5em;
+	color: var(--plum);
+	border-bottom: 1px dashed var(--eggplant);
+  padding: 20px;
+}
+
+#dates .attach1 {
+  grid-area: attach;
+  grid-row: 3/4;
+  grid-column: 5/6;
+  content: "";
+  font-family:'ZCOOL QingKe HuangYou', sans-serif;
+  font-size: 1.125em;
+  color: var(--plum);
+  font-style: italic;
+  border-bottom: 1px dashed var(--eggplant);
+  padding: 20px;
+}
+
+
+#dates .date2 {
+  grid-area: dates;
+  grid-row: 4/5;
+  grid-column: 1/2;
+  font-family:'ZCOOL QingKe HuangYou', sans-serif;
+  font-size: 1.5em;
+  color: var(--plum);
+  border-bottom: 1px dashed var(--eggplant);
+  padding: 20px;
+}
+
+#dates .event2 {
+  grid-area: event;
+  grid-row: 4/5;
+  grid-column: 2/3;
+  font-family:'ZCOOL QingKe HuangYou', sans-serif;
+  font-size: 1.5em;
+  color: var(--plum);
+  border-bottom: 1px dashed var(--eggplant);
+  padding: 20px;
+}
+
+#dates .time2 {
+	grid-area: times;
+	grid-row: 4/5;
+	grid-column: 3/4;
+	font-family:'ZCOOL QingKe HuangYou', sans-serif;
+	font-size: 1.5em;
+	color: var(--plum);
+	border-bottom: 1px dashed var(--eggplant);
+  padding: 20px;
+}
+
+#dates .venue2 {
+	grid-area: venues;
+	grid-row: 4/5;
+	grid-column: 4/5;
+	font-family:'ZCOOL QingKe HuangYou', sans-serif;
+	font-size: 1.5em;
+	color: var(--plum);
+	border-bottom: 1px dashed var(--eggplant);
+  padding: 20px;
+}
+
+#dates .attach2 {
+  grid-area: attach;
+  grid-row: 4/5;
+  grid-column: 5/6;
+  content: "";
+  font-family:'ZCOOL QingKe HuangYou', sans-serif;
+  font-size: 1.125em;
+  color: var(--plum);
+  font-style: italic;
+  border-bottom: 1px dashed var(--eggplant);
+  padding: 20px;
+}
+
+#dates .date3 {
+  grid-area: dates;
+  grid-row: 5/6;
+  grid-column: 1/2;
+  font-family:'ZCOOL QingKe HuangYou', sans-serif;
+  font-size: 1.5em;
+  color: var(--plum);
+  border-bottom: 1px dashed var(--eggplant);
+  padding: 20px;
+}
+
+#dates .event3 {
+  grid-area: event;
+  grid-row: 5/6;
+  grid-column: 2/3;
+  font-family:'ZCOOL QingKe HuangYou', sans-serif;
+  font-size: 1.5em;
+  color: var(--plum);
+  border-bottom: 1px dashed var(--eggplant);
+  padding: 20px;
+}
+
+#dates .time3 {
+	grid-area: times;
+	grid-row: 5/6;
+	grid-column: 3/4;
+	font-family:'ZCOOL QingKe HuangYou', sans-serif;
+	font-size: 1.5em;
+	color: var(--plum);
+	border-bottom: 1px dashed var(--eggplant);
+  padding: 20px;
+}
+
+#dates .venue3 {
+	grid-area: venues;
+	grid-row: 5/6;
+	grid-column: 4/5;
+	font-family:'ZCOOL QingKe HuangYou', sans-serif;
+	font-size: 1.5em;
+	color: var(--plum);
+	border-bottom: 1px dashed var(--eggplant);
+  padding: 20px;
+}
+
+#dates .attach3 {
+  grid-area: attach;
+  grid-row: 5/6;
+  grid-column: 5/6;
+  font-family:'ZCOOL QingKe HuangYou', sans-serif;
+  font-size: 1.125em;
+  color: var(--plum);
+  font-style: italic;
+  border-bottom: 1px dashed var(--eggplant);
+  padding: 20px;
+}
+
+
+#dates .date4 {
+  grid-area: dates;
+  grid-row: 6/7;
+  grid-column: 1/2;
+  font-family:'ZCOOL QingKe HuangYou', sans-serif;
+  font-size: 1.5em;
+  color: var(--plum);
+  border-bottom: 1px dashed var(--eggplant);
+  padding: 20px;
+}
+
+#dates .event4 {
+  grid-area: event;
+  grid-row: 6/7;
+  grid-column: 2/3;
+  font-family:'ZCOOL QingKe HuangYou', sans-serif;
+  font-size: 1.5em;
+  color: var(--plum);
+  border-bottom: 1px dashed var(--eggplant);
+  padding: 20px;
+}
+
+#dates .time4 {
+	grid-area: times;
+	grid-row: 6/7;
+	grid-column: 3/4;
+	font-family:'ZCOOL QingKe HuangYou', sans-serif;
+	font-size: 1.5em;
+	color: var(--plum);
+	border-bottom: 1px dashed var(--eggplant);
+  padding: 20px;
+}
+
+#dates .venue4 {
+	grid-area: venues;
+	grid-row: 6/7;
+	grid-column: 4/5;
+	font-family:'ZCOOL QingKe HuangYou', sans-serif;
+	font-size: 1.5em;
+	color: var(--plum);
+	border-bottom: 1px dashed var(--eggplant);
+  padding: 20px;
+}
+
+#dates .attach4 {
+  grid-area: attach;
+  grid-row: 6/7;
+  grid-column: 5/6;
+  font-family:'ZCOOL QingKe HuangYou', sans-serif;
+  font-size: 1.125em;
+  color: var(--plum);
+  font-style: italic;
+  border-bottom: 1px dashed var(--eggplant);
+  padding: 20px;
+}
+
+.dagger {
+  font-size: 1.125em;
+  font-weight: 700;
+  color: var(--cordial);
+}
+
+#dates .close {
+  grid-area: close;
+  grid-row: 7/8;
+  grid-column: 1/6;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1.125em;
+  font-weight: 600;
+  padding: 40px 0;
+  margin:30px 0 0 0;
+}
+
+#dates .dagger_close {
+  grid-area: close;
+  grid-row: 7/8;
+  grid-column: 1/6;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1.125em;
+  font-weight: 400;
+  padding: 30px 0;
+  opacity:0.75;
+}
+
+/* Dates End */
+
+
+/*--	Footer Start --*/
+
+/* W3Hub Footer */
+
+footer {
+  width: 100%;
+  height: 2.5rem;
+  bottom: 0;
+  position: absolute;
+}
+
+#footer{
+	width: 100%;
+	height: auto;
+	margin: auto;
+	background: var(--cordial);/*#272727 */
+	padding: 20px 0px;
+	
+}
+.footer-icon{
+	width: 100%;
+	height: auto;
+	margin: auto;
+	padding-top: 20px;
+}
+
+.footer-icon ul{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+
+.footer-icon ul li{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	margin: 0px 10px;
+	 /*move icon down some*/
+	border-radius: 100%;
+	background: var(--gray); /*#7DCEA0*/
+}
+
+.footer-icon ul li a{
+	text-decoration: none;
+	color: var(--granite);
+	font-size: 25px;
+	display: block;
+}
+
+.footer-icon ul li a i{
+	line-height: 50px;
+}
+
+.footer-icon ul li:hover{
+	background: var(--batter);/*e67e22*/
+}
+
+.footer-icon ul li a:hover >i{
+	transform: scale(1.6) rotate(25deg);
+}
+
+.footer-nav{
+	width: 100%;
+	height: auto;
+	margin: auto;
+	margin-top: 25px;
+}
+
+.footer-nav ul{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+
+.footer-nav ul li{
+	display: inline-block;
+	margin: 10px 20px;	 
+}
+
+.footer-nav ul li a{
+	text-decoration: none;
+	outline: none;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.footer-nav ul li a:hover{
+	color: var(--batter);/*#e67e22*/
+}
+
+.footer-nav1{
+	width: 100%;
+	height: auto;
+	margin: auto;
+	margin-top: 15px;
+}
+
+.footer-nav1 ul{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+
+.footer-nav1 ul li{
+	display: inline-block;
+	margin: 0px 20px;	 
+}
+.footer-nav1 ul li a{
+	text-decoration: none;
+	outline: none;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.footer-nav1 ul li a:hover{
+	color: var(--batter);/*#e67e22*/
+}
+.footer-nav2{
+	width: 100%;
+	height: auto;
+	margin: auto;
+}
+.footer-nav2 ul{
+	
+	text-align: center;
+}
+
+.footer-nav2 ul li{
+	
+	width: 40px;
+	height: 40px;
+	margin: 0px 10px;
+	
+	border-radius: 100%;
+	background: var(--gray); /*#fff */
+}
+.footer-nav2 ul li a{
+	text-decoration: none;
+	color: var(--granite);
+	font-size: 25px;
+	display: block;
+}
+.footer-nav2 ul li a i{
+	line-height: 50px;
+}
+.footer-nav2 ul li:hover{
+	background: var(--batter);/*#e67e22*/
+}
+.footer-nav2 ul li a:hover >i{
+	transform: scale(1.6) rotate(180deg);
+}
+.footer-end{
+	width: 100%;
+	height: auto;
+	margin: auto;
+	background: #7DCEA0;
+	padding: 10px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	text-align: center;
+}
+
+.footer-end p{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	letter-spacing: 2px;
+
+}
+
+footer p {
+    font-family: 'Montserrat';
+    font-size: 0.8125em;
+    text-align: center;
+}
+
+.foot-menu ul li {
   position: relative;
-  width: 100%;
+  display: inline;
+  padding: 10px;
+  background-color: var(--cordial);
+  border-right: 1px solid white;
 }
 
-.carousel-item {
-	  width: 100%;
-	  height: 600px;
+.footer-base {text-align: center;}
+
+.footer-base p {
+  color: white;
 }
 
-.one {
-  width: 100%;
-  height: 100%;
-  background-image: url("Teaneck Municipal Building Vintage.jpg");
-  /* linear-gradient(rgb(0,0,0),rgba(0,0,0,0.)),*/
-  background-size: cover;
-  background-repeat: no-repeat;
+a#masthead, a#webmaster {
+  color: papayawhip;
+  text-decoration: none;
 }
 
-.two { 
-  width: 100%;
-  height: 100%;
-  background-image: url("Teaneck Bowling Alley circa 1950.jpg");
-/*   filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.3)); */
-  background-size: cover;
-  background-repeat: no-repeat;
+
+a#masthead:hover, a#webmaster:hover {
+  color: var(--kale);
 }
 
-.three {
-  width: 100%;
-  height: 100%;
-  background-image: url("Teaneck Road Storefront.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 
-.four {
-  width: 100%;
-  height: 100%;
-  background-image: url("Teaneck Road Streetscape 03182019 (3).jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+/*-- Footer End --*/
