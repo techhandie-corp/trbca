@@ -641,7 +641,8 @@ td:nth-child(n) {border-right: 0;}/*1px solid var(--midnite)*/
 }
 
 #township {
-  margin: 50px;
+/*adjustment - listing above has 80px bottom margin*/
+  margin: -40px 50px 50px 50px;
   line-height: 2;
 }
 
