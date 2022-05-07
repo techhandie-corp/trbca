@@ -53,6 +53,10 @@
   line-height: 2;
 }
 
+.close-space {
+  line-height: 0.5;
+}
+
 .text {
   font-family: 'ZCOOL QingKe HuangYou', cursive;
 	font-size: 1.75em;
