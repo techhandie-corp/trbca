@@ -642,7 +642,7 @@ td:nth-child(n) {border-right: 0;}/*1px solid var(--midnite)*/
 
 #township {
   margin: 50px;
-  /*padding: 50px 0;*/
+  line-height: 2;
 }
 
 
