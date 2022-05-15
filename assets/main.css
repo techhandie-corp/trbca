@@ -492,6 +492,13 @@ form#bus_reg {
   border-radius: 10px;
 }
 
+[data-funding-source~="paylater"] {
+  display: none;
+}
+
+
+
+
 
 /**********/
 /**Errors**/
